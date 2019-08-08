@@ -1,4 +1,4 @@
-<!-- :: Last updated @ 5 August 2019 :: -->
+<!-- :: Last updated @ 8 August 2019 :: -->
 <!---->
 <!---->
 <!---->
@@ -39,7 +39,7 @@
     }
     main {
       max-width: 900px;
-      margin: 0 auto 50px auto;
+      margin: 0 auto;
       background: #fff;
       padding: 1rem 3rem;
       height: auto !important;
@@ -97,6 +97,10 @@
     }
     .item-subtitle {
       text-decoration: underline;
+    }
+    .footer-text {
+      text-align: center;
+      color: #656565;
     }
   </style>
 </head>
@@ -200,6 +204,30 @@
     </section>
   </main>
   <footer>
+    <p class="footer-text">To top</p>
   </footer>
+  <!-- :: add scroll-to on clicks :: -->
+  <script>
+    [...document.querySelectorAll('h1, h2, h3, h4')].forEach(h => {
+      h.addEventListener('click', scrollFn);
+    });
+
+    function scrollFn (e) {
+      window.scrollTo({
+        top: e.target.offsetTop - 10,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    document.querySelector('footer')
+    .addEventListener('click', (e) => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
 </body>
 </html>
