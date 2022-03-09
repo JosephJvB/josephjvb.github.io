@@ -1,4 +1,4 @@
-<!-- :: Last updated @ 19 Feb 2020 :: -->
+<!-- :: Last updated @ 9 March 2022 :: -->
 <!---->
 <!---->
 <!---->
@@ -22,6 +22,9 @@
   Im keen to do some quality learning time in the near future, 2020.
   Maybe JBA will offer me the chance to become Azure Cloud Accredited, else I find my own choice somewhere.
   Parents still strongly encourage a University Degree, and for good reason.
+-->
+<!--
+  TODO: code learning / skills in two columns on Desktop and 1 column on mobile
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -126,14 +129,43 @@
       <h2>Personal Profile</h2>
       <p class="m0">I have proven myself as a capable intermediate full-stack web developer.</p>
       <p class="m0">I have a solid understanding of popular web technologies in front and back end. I apply effort and care in my work and in building relationships with the people around me. I have been praised for my interpersonal skills and positive attitude.</p>
-      <p>My goal is to secure a role where I can apply the knowledge I have as a web developer and gain experience in a mentorship position.</p>
+      <p>My goal in my next role is to be able to do meaningful work in a flexible environment and provide value with the knowledge and experience I have as a web developer.</p>
       <br>
     </section>
     <section>
       <h2>Work Experience</h2>
+      <!-- :: MILKBooks :: -->
+      <div>
+        <h4 class="item-title">MILK Books</h4><h4 class="item-date">May 2020 - current</h4>
+      </div>
+      <p class="item-subtitle">Intermediate full-stack web developer</p>
+      <p>MILK Books offers an online photo book creation service. The technologies used include a web based Design Studio photo book tool, server side PDF generation services, and a complex system built over almost 10 years to handle user and photo book data. My primary responsibilty is as a backend web developer.</p>
+      <p class="text-underline">Main achievements:</p>
+      <ul>
+        <li>Updating many lambda functions using depricated runtimes to use modern code build and deploy solutions.</li>
+        <li>Automating a system to move terabytes of data between S3 storage tiers for considerable cost savings.</li>
+        <li>Effectively supporting the Marketing, Customer Support and Production teams with technical understanding of our systems and providing solutions.</li>
+        <li>Taking initiative to develop a command line app to be used internally which automates many repetitive tasks when solving Customer Support tickets.</li>
+        <li>Debugging and updating a complex, legacy Python script used for extracting data from InDesign files and saving to JSON format.</li>
+      </ul>
+      <p class="text-underline">Core learning:</p>
+      <ul>
+        <li>AWS services</li>
+        <li>AWS SAM templates</li>
+        <li>Typescript</li>
+        <li>Angular</li>
+        <li>C# .Net Framework</li>
+        <li>General scripting (Node.js, Python)</li>
+      </ul>
+      <p class="text-underline">Skills:</p>
+      <ul>
+        <li>Front-end: Angular, .Net Razor templating, SEO using </li>
+        <li>Back-end: Typescript, Node.js, C# (.NET Framework), MsSQL, RabbitMq, Managing complex json data</li>
+        <li>Hosting: Amazon Web Services (Lambda, DynamoDB, S3, CloudFormation, CloudWatch, API Gateway, SNS, SQS, Step Functions, EC2)</li>
+      </ul>
       <!-- :: JBA :: -->
       <div>
-        <h4 class="item-title">Joy Business Academy</h4><h4 class="item-date">Oct 2018 - current</h4>
+        <h4 class="item-title">Joy Business Academy</h4><h4 class="item-date">Oct 2018 - May 2020</h4>
       </div>
       <p class="item-subtitle">Intermediate full-stack web developer</p>
       <p>Working in a team of ~15 developers, creating education/gaming/assessment products for clients such as Trade Me and the Ministry of Social Development. I have worked across teams and projects, developing APIs to support Game Developers, creating micro-services from scratch and supporting legacy projects.</p>
@@ -197,17 +229,15 @@
     <section>
       <h2>Interests</h2>
       <h4>Programming:</h4>
-      <p>I am proactive learner, and am regularly working on personal projects. My github activity has recently been split across two acccounts, one <a href="http://github.com/JosephJvB" target="_blank" rel="noopener noreferrer">personal</a> and one for <a href="http://github.com/JosephvB-JBA" target="_blank" rel="noopener noreferrer">work</a>.</p>
-      <p>Personal projects include:</p>
+      <p>I am proactive learner, and am regularly working on personal projects.</p>
       <ul>
+        <li><a target="_blank" href="https://jaf-unwrapped.com">Spotify Quiz game.</a> Link to <a target="_blank" href="https://github.com/JosephJvB/fuzzy-fortnight2">frontend</a> and <a target="_blank" href="https://github.com/JosephJvB/fuzzy-fortnight">backend</a> that I showcased to a group of mates right after lockdown ended. (Typescript, React w/ Gatsby, SAM, AWS Lambda)</li>
         <li><a target="_blank" href="https://github.com/JosephJvB/slack-snake">Slack-bot</a> (Python)</li>
         <li><a target="_blank" href="https://joe-van-canvas.herokuapp.com">Art project.</a> (HTML/JS/Node.js) Drag your cursor around, and use the up and down arrows + Enter for different effects.</li>
-        <li><a target="_blank" href="https://github.com/JosephJvB/dropbox-client">Drop-box CLI</a> (Node.js) Manage dropbox from the command line</li>
         <li><a target="_blank" href="https://github.com/JosephJvB/public-record-bot">Discord-bot</a> (Node.js) integrates Google Sheets and Google Forms APIs</li>
       </ul>
       <h4>Personal:</h4>
-      <p>I am a social human, who loves music, and playing social soccer twice a week.</p>
-      <p>I have lived in Auckland since the beginning of 2018 and although I had a bicycle stolen, I do love this city for it's weather, food, concerts, beaches and some excellent humans who I share it with!</p>
+      <p>I love music, riding my weird bike, running, skiing, social soccer and walking up and around the many maunga in Tāmaki.</p>
     </section>
   </main>
   <footer>
@@ -215,26 +245,26 @@
   </footer>
   <!-- :: add scroll-to on clicks :: -->
   <script>
-    [...document.querySelectorAll('h1, h2, h3, h4')].forEach(h => {
-      h.addEventListener('click', scrollFn);
-    });
-
-    function scrollFn (e) {
+    const scrollFn = (e) => {
       window.scrollTo({
         top: e.target.offsetTop - 10,
         left: 0,
         behavior: 'smooth'
       });
     }
+    [...document.querySelectorAll('h1, h2, h3, h4')].forEach(h => {
+      h.addEventListener('click', scrollFn);
+    });
+
 
     document.querySelector('footer')
-    .addEventListener('click', (e) => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
+      .addEventListener('click', (e) => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });
       });
-    });
   </script>
 </body>
 </html>
