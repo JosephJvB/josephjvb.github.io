@@ -30,255 +30,406 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Joseph van Bohemen</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family:Georgia, serif, 'Trebuchet MS';
-    }
-    html, body {
-      background: #f0f0f0;
-      height: auto;
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #fff;
-      padding: 1rem 3rem;
-      height: auto !important;
-      height: 100%;
-      min-height: 100%;
-      box-shadow: 6px 0 6px 0px #ccc, -6px 0 6px 0px #ccc;
-    }
-    h1 {
-      font-size: 40px;
-      font-weight: normal;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    h2 {
-      font-size: 19px;
-      text-transform: uppercase;
-      border-bottom: 1px solid #ccc;
-      line-height: 45px;
-    }
-    h4 {
-      line-height: 30px;
-    }
-    p {
-      font-size: 14px;
-      text-align: left;
-    }
-    ul {
-      list-style-type: circle;
-    }
-    li {
-      font-size: 14px;
-    }
-    .name {
-      margin-bottom: 5px;
-    }
-    .contact-info {
-      justify-content: center;
-      text-align: center;
-      display: flex;
-      flex-direction: row;
-    }
-    .spacer {
-      margin: 0 7px;
-      padding-top: 15px;
-    }
-    .item-title {
-      float: left;
-      width: 50%
-    }
-    .item-date {
-      float: right;
-      width: 50%;
-      text-align: right;
-    }
-    .item-subtitle {
-      font-style: italic;
-    }
-    .footer-text {
-      text-align: center;
-      color: #656565;
-    }
-    .text-underline {
-      text-decoration: underline;
-    }
-    .m0 {
-      margin: 0;
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <section>
-      <h1 class="name">Joseph van Bohemen</h1>
-      <div class="contact-info">
-        <p>E-mail: joevanbo@pm.me</p>
-        <p class="spacer">•</p>
-        <!-- <p>Phone: +64 21 030 1444</p> -->
-        <p>Phone: +44 7377 203927</p>
-      </div>
-    </section>
-    <section>
-      <h2>Personal Profile</h2>
-      <p class="m0">I am an intermediate full-stack web developer with almost 5 years of experience - starting from Feburary 2018.</p>
-      <p class="m0">I have a solid understanding of popular web technologies both front and back-end. I apply effort and care in my work and in building relationships with the people around me. I have been praised for my interpersonal skills and positive attitude.</p>
-      <p>My goal in my next role is to be able to do meaningful work in a large-scale organization with defined structure and support systems.</p>
-      <br>
-    </section>
-    <section>
-      <h2>Work Experience</h2>
-      <!-- :: MILKBooks :: -->
-      <div>
-        <h4 class="item-title">MILK Books</h4><h4 class="item-date">May 2020 - current</h4>
-      </div>
-      <p class="item-subtitle">Intermediate full-stack web developer</p>
-      <p>MILK Books offers an online photo book creation service. The technologies used include a web based Design Studio photo book tool, server side PDF generation services, and a complex system built over almost 10 years to handle user and photo book data. My primary responsibilty is as a backend web developer.</p>
-      <p class="text-underline">Main achievements:</p>
-      <ul>
-        <li>Automating a system to move terabytes of data between S3 storage tiers for considerable cost savings.</li>
-        <li>Migrating Google Universal Analytics to Google Analytics 4 within a complex Google Tag Manager configuration.</li>
-        <li>Create and updating many lambda functions using depricated runtimes to use modern code build and deploy solutions.</li>
-        <li>Develop and maintain complex legacy C# apps running as Windows Services.</li>
-        <li>Effectively supporting the Marketing, Customer Support and Production teams with technical understanding of our systems and providing solutions.</li>
-        <li>Taking initiative to develop a command line app to be used internally which automates many repetitive tasks when solving Customer Support tickets.</li>
-        <li>Debugging and updating a complex, legacy Python script used for extracting data from InDesign files and saving to JSON format.</li>
-      </ul>
-      <p class="text-underline">Core learning:</p>
-      <ul>
-        <li>AWS services</li>
-        <li>Typescript</li>
-        <li>C# .Net Framework, Razor, Microsoft TPL</li>
-        <li>Angular</li>
-        <li>General scripting (Node.js/Typescript, Python)</li>
-      </ul>
-      <p class="text-underline">Skills:</p>
-      <ul>
-        <li>Front-end: Typescript/Angular, .Net Razor templating, SEO using </li>
-        <li>Back-end: Typescript/Node.js, C# (.NET Framework), MsSQL, NoSql, RabbitMq, Managing complex json data</li>
-        <li>Hosting: Amazon Web Services (Lambda, DynamoDB, S3, CloudFormation, CloudWatch, API Gateway, SNS, SQS, Step Functions, EC2)</li>
-      </ul>
-      <!-- :: JBA :: -->
-      <div>
-        <h4 class="item-title">Joy Business Academy</h4><h4 class="item-date">Oct 2018 - May 2020</h4>
-      </div>
-      <p class="item-subtitle">Intermediate full-stack web developer</p>
-      <p>Working in a team of ~15 developers, creating education/gaming/assessment products for clients such as Trade Me and the Ministry of Social Development. I have worked across teams and projects, developing APIs to support Game Developers, creating micro-services from scratch and supporting legacy projects.</p>
-      <p class="text-underline">Core learning:</p>
-      <ul>
-        <li>Developing micro-services using C# (.NET Core).</li>
-        <li>Regular peer-reviewing of code.</li>
-        <li>CI/CD experience from DevOps support.</li>
-      </ul>
-      <p class="text-underline">Skills:</p>
-      <ul>
-        <li>Front-end: Vue.js(1 and 2), PHP templating</li>
-        <li>Back-end: C# (.NET Core), PHP (Laravel framework), No-SQL, MySQL</li>
-        <li>Hosting: Microsoft Azure (Azure functions, CosmosDB, SeviceBus messaging, Blob Storage, SendGrid mail, Azure Pipelines)</li>
-        <li>Testing: C# xUnit</li>
-      </ul>
-      <!-- :: MINDED :: -->
-      <div>
-        <h4 class="item-title">Minded Ltd</h4><h4 class="item-date">Feb 2018 - Oct 2018</h4>
-      </div>
-      <p class="item-subtitle">Junior full-stack web developer</p>
-      <p>I worked as part of a team of 3 developers to turn a paper-based, self-discovery assessment into a progressive web app to be used by schools all around New Zealand. I participated in sprint-planning, presentation and feedback sessions with business.</p>
-      <p class="text-underline">Core learning:</p>
-      <ul>
-        <li>Understanding a more mature react.js-stack</li>
-        <li>Experience with hosting systems</li>
-        <li>Disaster recovery and management</li>
-      </ul>
-      <p class="text-underline">Skills:</p>
-      <ul>
-        <li>Front-end: React.js (Redux-Thunk, Recompose and Reselect), CSS (Fela.js)</li>
-        <li>Back-end: Node.js (Express, Knex and Feathers)</li>
-        <li>Hosting: Heroku (Postgresql, Coralogix app-logging, Cronjobs), Netlify, Mailchimp (Mandrill) </li>
-        <li>Testing: Codecept (automated user acceptance testing) and Load Impact (load testing)</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Education</h2>
-      <div>
-        <h4 class="item-title">Bootcamp Graduate</h4><h4 class="item-date">Jun 2017 - Nov 2017</h4>
-      </div>
-      <p class="item-subtitle">Dev Academy Wellington</p>
-      <p><i>"Learn the fundamentals of working in a web development team, programming, databases, web applications and web design."</i></p>
-      <p>Dev academy is a 4-month intensive web-development bootcamp designed to create valuable employees for the tech industry.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joseph van Bohemen</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Georgia, serif, 'Trebuchet MS';
+      }
+      html,
+      body {
+        background: #f0f0f0;
+        height: auto;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 1rem 3rem;
+        height: auto !important;
+        height: 100%;
+        min-height: 100%;
+        box-shadow: 6px 0 6px 0px #ccc, -6px 0 6px 0px #ccc;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: normal;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h2 {
+        font-size: 19px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+        line-height: 45px;
+      }
+      h4 {
+        line-height: 30px;
+      }
+      p {
+        font-size: 14px;
+        text-align: left;
+      }
+      ul {
+        list-style-type: circle;
+      }
+      li {
+        font-size: 14px;
+      }
+      .name {
+        margin-bottom: 5px;
+      }
+      .contact-info {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+      }
+      .spacer {
+        margin: 0 7px;
+        padding-top: 15px;
+      }
+      .item-title {
+        float: left;
+        width: 50%;
+      }
+      .item-date {
+        float: right;
+        width: 50%;
+        text-align: right;
+      }
+      .item-subtitle {
+        font-style: italic;
+      }
+      .footer-text {
+        text-align: center;
+        color: #656565;
+      }
+      .text-underline {
+        text-decoration: underline;
+      }
+      .m0 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 class="name">Joseph van Bohemen</h1>
+        <div class="contact-info">
+          <p>E-mail: joevanbo@pm.me</p>
+          <p class="spacer">•</p>
+          <!-- <p>Phone: +64 21 030 1444</p> -->
+          <p>Phone: +44 7377 203927</p>
+        </div>
+      </section>
+      <section>
+        <h2>Personal Profile</h2>
+        <p class="m0">
+          I am an intermediate full-stack web developer with almost 5 years of
+          experience - starting from Feburary 2018.
+        </p>
+        <p class="m0">
+          I have a solid understanding of popular web technologies both front
+          and back-end. I apply effort and care in my work and in building
+          relationships with the people around me. I have been praised for my
+          interpersonal skills and positive attitude.
+        </p>
+        <p>
+          My goal in my next role is to be able to do meaningful work in a
+          large-scale organization with defined structure and support systems.
+        </p>
+        <br />
+      </section>
+      <section>
+        <h2>Work Experience</h2>
+        <!-- :: MILKBooks :: -->
+        <div>
+          <h4 class="item-title">MILK Books</h4>
+          <h4 class="item-date">May 2020 - current</h4>
+        </div>
+        <p class="item-subtitle">Intermediate full-stack web developer</p>
+        <p>
+          MILK Books offers an online photo book creation service. The
+          technologies used include a web based Design Studio photo book tool,
+          server side PDF generation services, and a complex system built over
+          almost 10 years to handle user and photo book data. My primary
+          responsibilty is as a backend web developer.
+        </p>
+        <p class="text-underline">Main achievements:</p>
+        <ul>
+          <li>
+            Automating a system to move terabytes of data between S3 storage
+            tiers for considerable cost savings.
+          </li>
+          <li>
+            Migrating Google Universal Analytics to Google Analytics 4 within a
+            complex Google Tag Manager configuration.
+          </li>
+          <li>
+            Create and updating many lambda functions using depricated runtimes
+            to use modern code build and deploy solutions.
+          </li>
+          <li>
+            Develop and maintain complex legacy C# apps running as Windows
+            Services.
+          </li>
+          <li>
+            Effectively supporting the Marketing, Customer Support and
+            Production teams with technical understanding of our systems and
+            providing solutions.
+          </li>
+          <li>
+            Taking initiative to develop a command line app to be used
+            internally which automates many repetitive tasks when solving
+            Customer Support tickets.
+          </li>
+          <li>
+            Debugging and updating a complex, legacy Python script used for
+            extracting data from InDesign files and saving to JSON format.
+          </li>
+        </ul>
+        <p class="text-underline">Core learning:</p>
+        <ul>
+          <li>AWS services</li>
+          <li>Typescript</li>
+          <li>C# .Net Framework, Razor, Microsoft TPL</li>
+          <li>Angular</li>
+          <li>General scripting (Node.js/Typescript, Python)</li>
+        </ul>
+        <p class="text-underline">Skills:</p>
+        <ul>
+          <li>
+            Front-end: Typescript/Angular, .Net Razor templating, SEO using
+          </li>
+          <li>
+            Back-end: Typescript/Node.js, C# (.NET Framework), MsSQL, NoSql,
+            RabbitMq, Managing complex json data
+          </li>
+          <li>
+            Hosting: Amazon Web Services (Lambda, DynamoDB, S3, CloudFormation,
+            CloudWatch, API Gateway, SNS, SQS, Step Functions, EC2)
+          </li>
+        </ul>
+        <!-- :: JBA :: -->
+        <div>
+          <h4 class="item-title">Joy Business Academy</h4>
+          <h4 class="item-date">Oct 2018 - May 2020</h4>
+        </div>
+        <p class="item-subtitle">Intermediate full-stack web developer</p>
+        <p>
+          Working in a team of ~15 developers, creating
+          education/gaming/assessment products for clients such as Trade Me and
+          the Ministry of Social Development. I have worked across teams and
+          projects, developing APIs to support Game Developers, creating
+          micro-services from scratch and supporting legacy projects.
+        </p>
+        <p class="text-underline">Core learning:</p>
+        <ul>
+          <li>Developing micro-services using C# (.NET Core).</li>
+          <li>Regular peer-reviewing of code.</li>
+          <li>CI/CD experience from DevOps support.</li>
+        </ul>
+        <p class="text-underline">Skills:</p>
+        <ul>
+          <li>Front-end: Vue.js(1 and 2), PHP templating</li>
+          <li>
+            Back-end: C# (.NET Core), PHP (Laravel framework), No-SQL, MySQL
+          </li>
+          <li>
+            Hosting: Microsoft Azure (Azure functions, CosmosDB, SeviceBus
+            messaging, Blob Storage, SendGrid mail, Azure Pipelines)
+          </li>
+          <li>Testing: C# xUnit</li>
+        </ul>
+        <!-- :: MINDED :: -->
+        <div>
+          <h4 class="item-title">Minded Ltd</h4>
+          <h4 class="item-date">Feb 2018 - Oct 2018</h4>
+        </div>
+        <p class="item-subtitle">Junior full-stack web developer</p>
+        <p>
+          I worked as part of a team of 3 developers to turn a paper-based,
+          self-discovery assessment into a progressive web app to be used by
+          schools all around New Zealand. I participated in sprint-planning,
+          presentation and feedback sessions with business.
+        </p>
+        <p class="text-underline">Core learning:</p>
+        <ul>
+          <li>Understanding a more mature react.js-stack</li>
+          <li>Experience with hosting systems</li>
+          <li>Disaster recovery and management</li>
+        </ul>
+        <p class="text-underline">Skills:</p>
+        <ul>
+          <li>
+            Front-end: React.js (Redux-Thunk, Recompose and Reselect), CSS
+            (Fela.js)
+          </li>
+          <li>Back-end: Node.js (Express, Knex and Feathers)</li>
+          <li>
+            Hosting: Heroku (Postgresql, Coralogix app-logging, Cronjobs),
+            Netlify, Mailchimp (Mandrill)
+          </li>
+          <li>
+            Testing: Codecept (automated user acceptance testing) and Load
+            Impact (load testing)
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <div>
+          <h4 class="item-title">Bootcamp Graduate</h4>
+          <h4 class="item-date">Jun 2017 - Nov 2017</h4>
+        </div>
+        <p class="item-subtitle">Dev Academy Wellington</p>
+        <p>
+          <i
+            >"Learn the fundamentals of working in a web development team,
+            programming, databases, web applications and web design."</i
+          >
+        </p>
+        <p>
+          Dev academy is a 4-month intensive web-development bootcamp designed
+          to create valuable employees for the tech industry.
+        </p>
 
-      <p class="text-underline">Core learning:</p>
-      <ul>
-        <li>Fundamentals of web programming</li>
-        <li>Fundamentals of team dynamics and human skills</li>
-      </ul>
+        <p class="text-underline">Core learning:</p>
+        <ul>
+          <li>Fundamentals of web programming</li>
+          <li>Fundamentals of team dynamics and human skills</li>
+        </ul>
 
-      <p class="text-underline">Skills:</p>
-      <ul>
-        <li>Fundamentals of working in an agile web developement team.</li>
-        <li>Source control using Git and Github.</li>
-        <li>Front-end: HTML, CSS, Javascript, React, Redux.</li>
-        <li>Back-end: Node.js, Express, Knex, Sqlite, Postgresql.</li>
-        <li>Hosting: Heroku</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Interests</h2>
-      <h4>Programming:</h4>
-      <p>I am proactive learner, and am regularly working on personal projects.</p>
-      <ul>
-        <li>
-          <a target="_blank" href="https://www.jaf-unwrapped.com">Spotify Quiz game</a>. I created a quiz for friends using data from Spotify's public API. Gatsby frontend with multiple Lambdas as backend API. I using different programming languages in the backend specifically for my own learning.
-          <ul>
-            <li><a target="_blank" href="https://github.com/JosephJvB/gatsby-spotify-frontend">Gatsby Typescript frontend</a></li>
-            <li><a target="_blank" href="https://github.com/JosephJvB/spotify-adminquiz-backend">Python Lambda no.1 (quiz:admin)</a></li>
-            <li><a target="_blank" href="https://github.com/JosephJvB/spotify-userquiz-backend">Python Lambda no.2 (quiz:user)</a></li>
-            <li><a target="_blank" href="https://github.com/JosephJvB/spotify-session-backend">Python Lambda no.3 (sessions)</a></li>
-            <li><a target="_blank" href="https://github.com/JosephJvB/spotify-topitems-backend">Typescript Lambda (spotify api)</a></li>
-            <li><a target="_blank" href="https://github.com/JosephJvB/spotify-users-backend">Golang Lambda (user api)</a></li>
-          </ul>
-        </li>
-        <li><a target="_blank" href="https://github.com/JosephJvB/slack-snake">Slack-bot</a> (Python)</li>
-        <li><a target="_blank" href="https://joe-van-canvas.herokuapp.com">Art project.</a> (HTML/JS/Node.js) Drag your cursor around, and use the up and down arrows + Enter for different effects.</li>
-        <li><a target="_blank" href="https://github.com/JosephJvB/public-record-bot">Discord-bot</a> (Node.js) integrates Google Sheets and Google Forms APIs</li>
-      </ul>
-      <h4>Personal:</h4>
-      <p>I love music, cycling, running, skiing, social soccer and walking around in nature. In New Zealand My girlfriend and I were trying to walk on every (extinct!) volcano in Auckland. Please ask me about my favourite band, King Gizzard and the Lizard Wizard.</p>
-    </section>
-  </main>
-  <footer>
-    <p class="footer-text">To top</p>
-  </footer>
-  <!-- :: add scroll-to on clicks :: -->
-  <script>
-    const scrollFn = (e) => {
-      window.scrollTo({
-        top: e.target.offsetTop - 10,
-        left: 0,
-        behavior: 'smooth'
-      });
-    }
-    [...document.querySelectorAll('h1, h2, h3, h4')].forEach(h => {
-      h.addEventListener('click', scrollFn);
-    });
+        <p class="text-underline">Skills:</p>
+        <ul>
+          <li>Fundamentals of working in an agile web developement team.</li>
+          <li>Source control using Git and Github.</li>
+          <li>Front-end: HTML, CSS, Javascript, React, Redux.</li>
+          <li>Back-end: Node.js, Express, Knex, Sqlite, Postgresql.</li>
+          <li>Hosting: Heroku</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Interests</h2>
+        <h4>Programming:</h4>
+        <p>
+          I am proactive learner, and am regularly working on personal projects.
+        </p>
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.jaf-unwrapped.com"
+              >Spotify Quiz game</a
+            >. I created a quiz for friends using data from Spotify's public
+            API. Gatsby frontend with multiple Lambdas as backend API. I using
+            different programming languages in the backend specifically for my
+            own learning.
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/JosephJvB/gatsby-spotify-frontend"
+                  >Gatsby Typescript frontend</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/JosephJvB/spotify-adminquiz-backend"
+                  >Python Lambda no.1 (quiz:admin)</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/JosephJvB/spotify-userquiz-backend"
+                  >Python Lambda no.2 (quiz:user)</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/JosephJvB/spotify-session-backend"
+                  >Python Lambda no.3 (sessions)</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/JosephJvB/spotify-topitems-backend"
+                  >Typescript Lambda (spotify api)</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/JosephJvB/spotify-users-backend"
+                  >Golang Lambda (user api)</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/JosephJvB/slack-snake"
+              >Slack-bot</a
+            >
+            (Python)
+          </li>
+          <li>
+            <a target="_blank" href="https://joe-van-canvas.herokuapp.com"
+              >Art project.</a
+            >
+            (HTML/JS/Node.js) Drag your cursor around, and use the up and down
+            arrows + Enter for different effects.
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/JosephJvB/public-record-bot"
+              >Discord-bot</a
+            >
+            (Node.js) integrates Google Sheets and Google Forms APIs
+          </li>
+        </ul>
+        <h4>Personal:</h4>
+        <p>
+          I love music, cycling, running, skiing, social soccer and walking
+          around in nature. In New Zealand My girlfriend and I were trying to
+          walk on every (extinct!) volcano in Auckland. Please ask me about my
+          favourite band, King Gizzard and the Lizard Wizard.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">To top</p>
+    </footer>
+    <!-- :: add scroll-to on clicks :: -->
+    <script>
+      const scrollFn = (e) => {
+        window.scrollTo({
+          top: e.target.offsetTop - 10,
+          left: 0,
+          behavior: 'smooth',
+        })
+      }
+      ;[...document.querySelectorAll('h1, h2, h3, h4')].forEach((h) => {
+        h.addEventListener('click', scrollFn)
+      })
 
-
-    document.querySelector('footer')
-      .addEventListener('click', (e) => {
+      document.querySelector('footer').addEventListener('click', (e) => {
         window.scrollTo({
           top: 0,
           left: 0,
-          behavior: 'smooth'
-        });
-      });
-  </script>
-</body>
+          behavior: 'smooth',
+        })
+      })
+    </script>
+  </body>
 </html>
